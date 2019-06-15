@@ -1,4 +1,3 @@
 FROM ubuntu:latest
-COPY . /app
-RUN make /app
-CMD python /app/app.py
+RUN apt-get update
+RUN apt-get install -y curl
